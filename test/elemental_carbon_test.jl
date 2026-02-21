@@ -24,7 +24,7 @@
 
     obs = string(observed(sys))
     @test occursin(
-        "ElementalCarbon₊NEI2016MonthlyEmis_PEC(t) ~ (MW_Air*nmolpermol*NEI2016MonthlyEmis₊PEC(t)) / MW_C",
+        "ElementalCarbon₊NEI2016MonthlyEmis_PEC(t) ~ (MW_air*nmolpermol*NEI2016MonthlyEmis₊PEC(t)) / MW_C",
         obs
     )
     @test occursin("ElementalCarbon₊T(t) ~ GEOSFP₊I3₊T(t)", obs)
