@@ -13,4 +13,8 @@ include("elemental_carbon.jl")
 include("isorropia/isorropia.jl")
 @reexport using .ISORROPIA
 
+# New ISORROPIA II implementation (fixed version)
+include("isorropia_ii_fixed.jl")
+@reexport using .IsorropiaII
+
 end
